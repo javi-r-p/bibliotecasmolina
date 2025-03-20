@@ -1,6 +1,6 @@
 -- CREAR BASE DE DATOS
 CREATE DATABASE rmbm;
-USE rbmb;
+USE rmbm;
 
 -- CREAR TABLAS
 -- TABLA autores
