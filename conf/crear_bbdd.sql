@@ -57,7 +57,7 @@ CREATE TABLE socios (
     correo VARCHAR(100) UNIQUE NOT NULL,
     fechaNacimiento DATE NOT NULL,
     clave VARCHAR(100) NOT NULL,
-    CONSTRAINT PK_socios PRIMARY KEY (socios)
+    CONSTRAINT PK_socios PRIMARY KEY (id)
 );
 
 -- TABLA prestamos
