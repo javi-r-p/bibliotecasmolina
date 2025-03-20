@@ -90,3 +90,12 @@ CREATE TABLE empleados (
     administrador BOOLEAN,
     CONSTRAINT PK_empleados PRIMARY KEY (id)
 );
+
+-- Crear usuarios y asignar permisos
+CREATE USER 'consultas'@'localhost' IDENTIFIED BY 'consultas';
+GRANT SELECT ON rmbm.* TO 'consultas'@'localhost';
+
+CREATE USER 'rmbm'@'localhost' IDENTIFIED BY 'rmbm';
+GRANT ALL PRIVILEGES ON rmbm.* TO 'rmbm'@'localhost';
+
+FLUSH PRIVILEGES;
