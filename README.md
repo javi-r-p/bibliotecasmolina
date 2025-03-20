@@ -1,4 +1,4 @@
-## **Red Municipal de Bibliotecas de Molina** es una aplicación web programada en PHP como proyecto de fin de grado del ciclo formativo de grado superior en Administración de sistemas informáticos en red.\
+## **Red Municipal de Bibliotecas de Molina** es una aplicación web programada en PHP como proyecto de fin de grado del ciclo formativo de grado superior en Administración de sistemas informáticos en red.
 La aplicación será desarrollada por dos alumnos (Javier Rodríguez y Joaquín Campoy) en un plazo de tres meses aproximadamente.\
 Esta aplicación tiene acceso a una base de datos, donde se registrarán los préstamos, sanciones, libros, autores y ejemplares. En dicha base de datos también se encontrarán las cuentas de los socios y de los empleados de la red de blbliotecas.\
 Para la base de datos se utilizará el sistema gestor de bases de datos _MySQL_.\
