@@ -42,8 +42,7 @@ CREATE TABLE libros (
 -- TABLA ejemplares
 CREATE TABLE ejemplares (
 	id INT UNSIGNED NOT NULL,
-    formato VARCHAR(20) NOT NULL,
-    numPaginas SMALLINT UNSIGNED NOT NULL,
+    paginas SMALLINT UNSIGNED NOT NULL,
     isbn INT UNSIGNED,
     CONSTRAINT PK_ejemplares PRIMARY KEY (id),
     CONSTRAINT FK_ejemplaresLibros FOREIGN KEY (isbn) REFERENCES libros (isbn) ON UPDATE CASCADE ON DELETE CASCADE
@@ -54,8 +53,8 @@ CREATE TABLE socios (
 	id INT UNSIGNED NOT NULL,
     dni VARCHAR(9) UNIQUE NOT NULL,
     nombre VARCHAR(200) NOT NULL,
-    correo VARCHAR(100) UNIQUE NOT NULL,
     fechaNacimiento DATE NOT NULL,
+    correo VARCHAR(100) UNIQUE NOT NULL,
     clave VARCHAR(100) NOT NULL,
     CONSTRAINT PK_socios PRIMARY KEY (id)
 );
