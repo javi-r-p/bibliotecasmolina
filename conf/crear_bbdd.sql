@@ -29,7 +29,7 @@ CREATE TABLE libros (
 	isbn INT UNSIGNED NOT NULL,
     titulo VARCHAR(100) NOT NULL,
     descripcion VARCHAR(1000),
-    fechaPublicacion DATE NOT NULL,
+    fechaPublicacion YEAR NOT NULL,
     autor SMALLINT UNSIGNED NOT NULL,
     idioma TINYINT UNSIGNED NOT NULL,
     area SMALLINT UNSIGNED NOT NULL,
