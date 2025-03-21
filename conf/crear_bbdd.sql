@@ -26,7 +26,7 @@ CREATE TABLE areas (
 
 -- TABLA libros
 CREATE TABLE libros (
-	isbn INT UNSIGNED NOT NULL,
+	isbn BIGINT UNSIGNED NOT NULL,
     titulo VARCHAR(100) NOT NULL,
     descripcion VARCHAR(1000),
     fechaPublicacion YEAR NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE libros (
 CREATE TABLE ejemplares (
 	id INT UNSIGNED NOT NULL,
     paginas SMALLINT UNSIGNED NOT NULL,
-    isbn INT UNSIGNED,
+    isbn BIGINT UNSIGNED,
     CONSTRAINT PK_ejemplares PRIMARY KEY (id),
     CONSTRAINT FK_ejemplaresLibros FOREIGN KEY (isbn) REFERENCES libros (isbn) ON UPDATE CASCADE ON DELETE CASCADE
 );
